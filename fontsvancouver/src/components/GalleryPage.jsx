@@ -1,11 +1,24 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; // Added useNavigate
 import ImageData from '../data/ImageData';
 
 function GalleryPage() {
+    const navigate = useNavigate(); // Add this hook
     const [currentCycle, setCurrentCycle] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isLoading, setIsLoading] = useState(true);
+
+    // Add refresh handler
+    useEffect(() => {
+        const handleRefresh = () => {
+            if (performance.navigation.type === 1) { // Check if it's a refresh
+                navigate('/');
+            }
+        };
+
+        window.addEventListener('load', handleRefresh);
+        return () => window.removeEventListener('load', handleRefresh);
+    }, [navigate]);
 
     useEffect(() => {
         const initializeCycle = () => {
