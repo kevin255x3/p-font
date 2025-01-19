@@ -1,16 +1,21 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import GalleryPage from './components/GalleryPage';
-import { useEffect } from 'react';
+import { useEffect } from 'react'; // Add this import
 
 function App() {
-  // Add this effect to handle page refreshes
   useEffect(() => {
-    // Check if we're not on the homepage
-    if (window.location.pathname !== '/') {
-      // Redirect to homepage
-      window.location.href = '/';
-    }
+    const handleRefresh = () => {
+      if (window.location.pathname !== '/') {
+        window.location.replace('/');
+      }
+    };
+
+    // Listen for page loads (including refreshes)
+    window.addEventListener('load', handleRefresh);
+
+    // Cleanup
+    return () => window.removeEventListener('load', handleRefresh);
   }, []);
 
   return (
