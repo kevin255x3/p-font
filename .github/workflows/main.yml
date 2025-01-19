@@ -18,6 +18,7 @@ jobs:
           cd fontsvancouver
           npm install
           npm run build
+          cp .htaccess dist/
       - name: 📁 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
