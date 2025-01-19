@@ -4,7 +4,7 @@ import GalleryPage from './components/GalleryPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/fontsvancouver">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/gallery" element={<GalleryPage />} />
