@@ -25,4 +25,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: "fontsvancouver/dist/"
-          server-dir: "/"
+          server-dir: "/fontsvancouver"
