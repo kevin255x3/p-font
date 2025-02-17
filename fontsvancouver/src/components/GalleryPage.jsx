@@ -223,6 +223,7 @@ function GalleryPage() {
                                         autoPlay
                                         loop
                                         muted
+                                        playsInline
                                         src="/img/bird.mp4"
                                         alt="Map View"
                                         className="w-full h-full object-cover"
@@ -238,6 +239,7 @@ function GalleryPage() {
                                         autoPlay
                                         loop
                                         muted
+                                        playsInline
                                         src="/img/eye.mp4"
                                         alt="Submit Your Font"
                                         className="w-full h-full object-cover"
