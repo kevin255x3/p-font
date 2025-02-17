@@ -6,7 +6,7 @@ const HomePage = () => {
         <div className="min-h-screen flex items-center justify-center bg-white p-4">
             <div className="relative flex flex-col gap-0 w-full max-w-[900px]">
                 <h1 className="font-mono text-xs absolute top-0 left-0 border border-black p-2 bg-white -translate-y-full mb-4">
-                    fonts.vancouver
+                    fonts.local
                 </h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-[minmax(0,3.5fr)_minmax(0,1fr)] border-t border-l border-black">
@@ -22,9 +22,9 @@ const HomePage = () => {
                         />
                         <Link
                             to="/gallery"
-                            className="font-mono text-xs hover:underline cursor-pointer transition-all duration-300"
+                            className="font-mono text-xs hover:underline hover:text-green-500 cursor-pointer transition-all duration-300 "
                         >
-                            fonts.vancouver
+                            fonts.local
                         </Link>
                     </div>
 
@@ -33,13 +33,13 @@ const HomePage = () => {
                             <p>ID_HOME</p>
                             <p>LOC_LANDING</p>
                             <p>STATUS_READY</p>
-                            <p className="mt-auto">CLICK_TO_BEGIN</p>
+                            <Link to="/gallery" className="mt-auto hover:underline hover:text-green-500 cursor-pointer transition-all duration-300"> CLICK_TO_BEGIN </Link>
                         </div>
                     </div>
 
                     <div className="col-span-1 md:col-span-2 grid grid-cols-2 divide-x divide-black border-r border-b border-black">
                         <p className="font-mono text-[10px] p-2">SYSTEM_READY</p>
-                        <p className="font-mono text-[10px] p-2 text-right">CLICK_TO_BEGIN</p>
+                        <p className="font-mono text-[10px] p-2 text-right">ACCESS_READY</p>
                     </div>
                 </div>
             </div>
