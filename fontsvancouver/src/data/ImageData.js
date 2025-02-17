@@ -334,7 +334,80 @@ const ImageData = [
         src: "/img/t58.jpg",
         artist: "Unknown Artist",
         location: "Redacted",
-    }
+    },
+    // Here are the entries with converted coordinates
+    {
+        id: 59,
+        src: "/img/t59.jpeg",
+        artist: "Rime",
+        location: "34.06839 N, 118.22633 W",    // Converted from 34° 4' 6.2 N, 118° 13' 34.77 W
+    },
+    {
+        id: 60,
+        src: "/img/t60.jpeg",
+        artist: "Zayes",
+        location: "49.18246 N, 122.92854 W",    // Converted from 49° 10' 56.85 N, 122° 55' 42.732 W
+    },
+    {
+        id: 61,
+        src: "/img/t61.jpeg",
+        artist: "Kashink",
+        location: "40.70907 N, 73.92398 W",    // Converted from 40° 42' 32.658 N, 73° 55' 26.328 W
+    },
+    {
+        id: 62,
+        src: "/img/t62.jpeg",
+        artist: "Various Artists",
+        location: "49.26245 N, 123.05676 W",    // Converted from 49° 15' 44.82 N, 123° 3' 24.35 W
+    },
+    {
+        id: 63,
+        src: "/img/t63.jpwg",
+        artist: "Nako",
+        location: "49.19910 N, 123.05855 W",    // Converted from 49° 11' 56.748 N, 123° 3' 30.77 W
+    },
+    {
+        id: 64,
+        src: "/img/t64.jpeg",
+        artist: "Faust",
+        location: "34.04647 N, 118.23752 W",    // Converted from 34° 2' 47.31 N, 118° 14' 15.072 W
+    },
+    {
+        id: 65,
+        src: "/img/t65.jpeg",
+        artist: "Res",
+        location: "40.69682 N, 73.93558 W",    // Converted from 40° 41' 48.552 N, 73° 56' 8.082 W
+    },
+    {
+        id: 66,
+        src: "/img/t66.jpeg",
+        artist: "Zayes and Ekser",
+        location: "Redacted",
+    },
+    {
+        id: 67,
+        src: "/img/t67.jpeg",
+        artist: "Unknown Artist",
+        location: "40.72990 N, 73.95842 W",    // Converted from 40° 43' 47.64 N, 73° 57' 30.312 W
+    },
+    {
+        id: 68,
+        src: "/img/t68.jpeg",
+        artist: "Ekser",
+        location: "Redacted",
+    },
+    {
+        id: 69,
+        src: "/img/t69.jpeg",
+        artist: "Maven",
+        location: "37.79578 N, 122.40857 W",    // Converted from 37° 47' 44.808 N, 122° 24' 30.852 W
+    },
+    {
+        id: 70,
+        src: "/img/t70.jpeg",
+        artist: "Mock and Vers II",
+        location: "49.27849 N, 123.09789 W",    // Converted from 49° 16' 42.558 N, 123° 5' 52.41 W
+    },
 ];
 
 export default ImageData;
