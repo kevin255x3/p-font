@@ -11,15 +11,17 @@ const HomePage = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-[minmax(0,3.5fr)_minmax(0,1fr)] border-t border-l border-black">
                     <div className="relative border-r border-b border-black aspect-square flex flex-col items-center justify-center p-4">
-                        <video
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            src="/spray.mp4"
-                            alt="Spray can icon"
-                            className="w-24 h-24 object-contain mb-4"
-                        />
+                        <Link to="/gallery">
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                src="/spray.mp4"
+                                alt="Spray can icon"
+                                className="w-24 h-24 object-contain mb-4"
+                            />
+                        </Link>
                         <Link
                             to="/gallery"
                             className="font-mono text-xs hover:underline hover:text-green-500 cursor-pointer transition-all duration-300 "
